@@ -38,8 +38,8 @@ class Pomodoro extends StatefulWidget {
 }
 
 class _PomodoroState extends State<Pomodoro> {
-  static const defalutFocusTime = 60;
-  static const defalutRestTime = 60;
+  static const defalutFocusTime = 300;
+  static const defalutRestTime = 300;
   static const focus = 'focus';
   static const rest = 'rest';
   int focusTime = defalutFocusTime;
@@ -233,27 +233,27 @@ class _PomodoroState extends State<Pomodoro> {
                       child: Row(
                         children: [
                           TimerOption(
-                            minute: 1,
-                            onTimeSelected: _handleTimerOptionSelected,
-                          ),
-                          const SizedBox(width: 10),
-                          TimerOption(
-                            minute: 5,
-                            onTimeSelected: _handleTimerOptionSelected,
-                          ),
-                          const SizedBox(width: 10),
-                          TimerOption(
-                            minute: 10,
-                            onTimeSelected: _handleTimerOptionSelected,
-                          ),
-                          const SizedBox(width: 10),
-                          TimerOption(
                             minute: 15,
                             onTimeSelected: _handleTimerOptionSelected,
                           ),
                           const SizedBox(width: 10),
                           TimerOption(
+                            minute: 20,
+                            onTimeSelected: _handleTimerOptionSelected,
+                          ),
+                          const SizedBox(width: 10),
+                          TimerOption(
+                            minute: 25,
+                            onTimeSelected: _handleTimerOptionSelected,
+                          ),
+                          const SizedBox(width: 10),
+                          TimerOption(
                             minute: 30,
+                            onTimeSelected: _handleTimerOptionSelected,
+                          ),
+                          const SizedBox(width: 10),
+                          TimerOption(
+                            minute: 35,
                             onTimeSelected: _handleTimerOptionSelected,
                           ),
                         ],
